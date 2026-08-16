@@ -11,6 +11,7 @@ technologies:
   - Azure
   - Blockchain
   - Docker
+  - RabbitMQ
 ---
 
 Worked with clients and distributed development teams delivering Azure-based solutions across multiple industries.

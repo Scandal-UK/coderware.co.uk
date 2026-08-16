@@ -7,6 +7,8 @@ end: 2020-10
 technologies:
   - C#
   - ASP.NET Core
+  - SignalR
+  - ML.NET
   - IdentityServer4
   - Azure
   - TypeScript

@@ -13,7 +13,8 @@ technologies:
   - Snowflake
   - Terraform
   - NServiceBus
-  - Microservices
+  - SignalR
+  - Datadog
 ---
 
 Working in a team migrating a legacy monolithic platform to a suite of microservices for pensions/investment management.

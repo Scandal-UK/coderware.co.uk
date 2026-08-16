@@ -1,0 +1,24 @@
+{
+  "name": "coderware.co.uk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scandal-uk/coderware.co.uk.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/scandal-uk/coderware.co.uk/issues"
+  },
+  "homepage": "https://github.com/scandal-uk/coderware.co.uk#readme",
+  "dependencies": {
+    "astro": "^7.2.2"
+  }
+}

@@ -5,13 +5,19 @@ const { profile } = Astro.props;
 const { Content } = await render(profile);
 ---
 
-<header>
-  <h1>{profile.data.name}</h1>
-  <p>{profile.data.role}</p>
+<header class="profile-header">
+  <div class="profile-identity">
+    <h1>{profile.data.name}</h1>
+    <p class="profile-role">{profile.data.role}</p>
 
-  {profile.data.secondaryRole && <p>{profile.data.secondaryRole}</p>}
+    {
+      profile.data.secondaryRole && (
+        <p class="profile-secondary-role">{profile.data.secondaryRole}</p>
+      )
+    }
 
-  <p>{profile.data.location}</p>
+    <p class="profile-location">{profile.data.location}</p>
+  </div>
 
   <nav aria-label="Professional profiles">
     <ul>
@@ -21,14 +27,14 @@ const { Content } = await render(profile);
   </nav>
 </header>
 
-<section aria-labelledby="professional-profile-heading">
+<section class="professional-profile" aria-labelledby="professional-profile-heading">
   <h2 id="professional-profile-heading">Professional profile</h2>
   <Content />
 </section>
 
 {
   profile.data.specialisms.length > 0 && (
-    <section aria-labelledby="specialisms-heading">
+    <section class="specialisms" aria-labelledby="specialisms-heading">
       <h2 id="specialisms-heading">Specialisms</h2>
       <ul>
         {profile.data.specialisms.map((specialism) => (

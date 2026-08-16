@@ -25,17 +25,19 @@ const categories = [
 ];
 ---
 
-<section aria-labelledby="technical-expertise-heading">
+<section class="technical-expertise" aria-labelledby="technical-expertise-heading">
   <h2 id="technical-expertise-heading">Technical expertise</h2>
 
-  {
-    categories.map((category) => (
-      <section>
-        <h3>{category.heading}</h3>
-        <ul>
-          {category.skills.map((skill) => <li>{skill}</li>)}
-        </ul>
-      </section>
-    ))
-  }
+  <div class="skills-grid">
+    {
+      categories.map((category) => (
+        <section>
+          <h3>{category.heading}</h3>
+          <ul>
+            {category.skills.map((skill) => <li>{skill}</li>)}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
 </section>

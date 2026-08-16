@@ -32,6 +32,21 @@ const highlights = defineCollection({
   }),
 });
 
+const skills = defineCollection({
+  loader: glob({
+    pattern: 'skills.md',
+    base: './src/content',
+  }),
+
+  schema: z.object({
+    softwareDevelopment: z.array(z.string()),
+    cloudDevOps: z.array(z.string()),
+    identitySecurity: z.array(z.string()),
+    frontEnd: z.array(z.string()),
+    engineering: z.array(z.string()),
+  }),
+});
+
 const experience = defineCollection({
   loader: glob({
     pattern: '*.md',
@@ -51,5 +66,6 @@ const experience = defineCollection({
 export const collections = {
   profile,
   highlights,
+  skills,
   experience,
 };

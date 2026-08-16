@@ -3,6 +3,7 @@ import { getCollection, getEntry } from 'astro:content';
 import Experience from '../components/Experience.astro';
 import Highlights from '../components/Highlights.astro';
 import Profile from '../components/Profile.astro';
+import Skills from '../components/Skills.astro';
 
 const title = 'Dan Ware | Senior Software Engineer';
 
@@ -16,6 +17,12 @@ const highlights = await getEntry('highlights', 'highlights');
 
 if (!highlights) {
   throw new Error('Career highlights content is missing');
+}
+
+const skills = await getEntry('skills', 'skills');
+
+if (!skills) {
+  throw new Error('Technical expertise content is missing');
 }
 
 const experience = (await getCollection('experience'))
@@ -36,6 +43,7 @@ const experience = (await getCollection('experience'))
     <main>
       <Profile profile={profile} />
       <Highlights highlights={highlights.data.highlights} />
+      <Skills skills={skills.data} />
 
       <section>
         <h2>Experience</h2>

@@ -43,7 +43,6 @@ const experience = (await getCollection('experience'))
     <main>
       <Profile profile={profile} />
       <Highlights highlights={highlights.data.highlights} />
-      <Skills skills={skills.data} />
 
       <section>
         <h2>Experience</h2>
@@ -54,6 +53,8 @@ const experience = (await getCollection('experience'))
           ))
         }
       </section>
+
+      <Skills skills={skills.data} />
     </main>
   </body>
 </html>

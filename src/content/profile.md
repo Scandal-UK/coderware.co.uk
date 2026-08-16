@@ -10,6 +10,7 @@ specialisms:
   - Azure Architecture
   - Identity Systems
 
+email: dan@coderware.co.uk
 linkedin: https://www.linkedin.com/in/dan-ware-uk/
 github: https://github.com/scandal-uk
 ---

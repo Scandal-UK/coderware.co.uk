@@ -13,6 +13,7 @@ const profile = defineCollection({
     secondaryRole: z.string().optional(),
     location: z.string(),
     specialisms: z.array(z.string()).default([]),
+    email: z.string().email(),
     linkedin: z.string().url(),
     github: z.string().url(),
   }),

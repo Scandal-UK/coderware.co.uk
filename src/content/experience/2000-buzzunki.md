@@ -1,8 +1,8 @@
 ---
 company: Buzzunki
 role: Web Designer
-start: 2000
-end: 2002
+start: 2000-03
+end: 2002-03
 
 technologies:
   - ColdFusion

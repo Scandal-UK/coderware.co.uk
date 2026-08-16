@@ -1,8 +1,8 @@
 ---
 company: Self Employment
 role: Freelance Developer
-start: 1999
-end: 2018
+start: 1999-11
+end: 2018-08
 
 technologies:
   - Microsoft Azure

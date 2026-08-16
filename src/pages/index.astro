@@ -1,5 +1,10 @@
 ---
+import { getCollection } from 'astro:content';
+
 const title = 'Dan Ware | Senior Software Engineer';
+
+const experience = (await getCollection('experience'))
+  .sort((left, right) => right.data.start.localeCompare(left.data.start));
 ---
 
 <!doctype html>
@@ -9,10 +14,27 @@ const title = 'Dan Ware | Senior Software Engineer';
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
   </head>
+
   <body>
     <main>
-      <h1>Dan Ware</h1>
-      <p>Senior Software Engineer</p>
+      <header>
+        <h1>Dan Ware</h1>
+        <p>Senior Software Engineer</p>
+      </header>
+
+      <section>
+        <h2>Experience</h2>
+
+        {
+          experience.map((job) => (
+            <article>
+              <h3>{job.data.role}</h3>
+              <p>{job.data.company}</p>
+              <p>{job.data.start} – {job.data.end}</p>
+            </article>
+          ))
+        }
+      </section>
     </main>
   </body>
 </html>

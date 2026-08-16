@@ -1,6 +1,23 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+const profile = defineCollection({
+  loader: glob({
+    pattern: 'profile.md',
+    base: './src/content',
+  }),
+
+  schema: z.object({
+    name: z.string(),
+    role: z.string(),
+    secondaryRole: z.string().optional(),
+    location: z.string(),
+    specialisms: z.array(z.string()).default([]),
+    linkedin: z.string().url(),
+    github: z.string().url(),
+  }),
+});
+
 const experience = defineCollection({
   loader: glob({
     pattern: '*.md',
@@ -18,5 +35,6 @@ const experience = defineCollection({
 });
 
 export const collections = {
-    experience,
+  profile,
+  experience,
 };

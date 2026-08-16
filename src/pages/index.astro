@@ -1,8 +1,15 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import Experience from '../components/Experience.astro';
+import Profile from '../components/Profile.astro';
 
 const title = 'Dan Ware | Senior Software Engineer';
+
+const profile = await getEntry('profile', 'profile');
+
+if (!profile) {
+  throw new Error('Profile content is missing');
+}
 
 const experience = (await getCollection('experience'))
   .sort((left, right) =>
@@ -20,10 +27,7 @@ const experience = (await getCollection('experience'))
 
   <body>
     <main>
-      <header>
-        <h1>Dan Ware</h1>
-        <p>Senior Software Engineer</p>
-      </header>
+      <Profile profile={profile} />
 
       <section>
         <h2>Experience</h2>

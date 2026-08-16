@@ -4,6 +4,7 @@ import Experience from '../components/Experience.astro';
 import Highlights from '../components/Highlights.astro';
 import Profile from '../components/Profile.astro';
 import Skills from '../components/Skills.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 const title = 'Dan Ware | Senior Software Engineer';
 
@@ -31,30 +32,20 @@ const experience = (await getCollection('experience'))
   );
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
-  </head>
+<BaseLayout title={title}>
+  <main>
+    <Profile profile={profile} />
+    <Highlights highlights={highlights.data.highlights} />
+    <Skills skills={skills.data} />
 
-  <body>
-    <main>
-      <Profile profile={profile} />
-      <Highlights highlights={highlights.data.highlights} />
+    <section>
+      <h2>Experience</h2>
 
-      <section>
-        <h2>Experience</h2>
-
-        {
-          experience.map((job) => (
-            <Experience job={job} />
-          ))
-        }
-      </section>
-
-      <Skills skills={skills.data} />
-    </main>
-  </body>
-</html>
+      {
+        experience.map((job) => (
+          <Experience job={job} />
+        ))
+      }
+    </section>
+  </main>
+</BaseLayout>

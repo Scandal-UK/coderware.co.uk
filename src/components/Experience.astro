@@ -3,13 +3,25 @@ import { render } from 'astro:content';
 
 const { job } = Astro.props;
 const { Content } = await render(job);
+
+const headingId = `experience-${job.id}`;
+
+const formatDate = (value) => new Intl.DateTimeFormat('en-GB', {
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+}).format(new Date(`${value}-01T00:00:00Z`));
 ---
 
-<article>
+<article aria-labelledby={headingId}>
   <header>
-    <h3>{job.data.role}</h3>
+    <h3 id={headingId}>{job.data.role}</h3>
     <p>{job.data.company}</p>
-    <p>{job.data.start} – {job.data.end}</p>
+    <p>
+      <time datetime={job.data.start}>{formatDate(job.data.start)}</time>
+      {' – '}
+      <time datetime={job.data.end}>{formatDate(job.data.end)}</time>
+    </p>
   </header>
 
   <Content />

@@ -13,25 +13,28 @@ const { Content } = await render(profile);
 
   <p>{profile.data.location}</p>
 
-  <Content />
-
-  {
-    profile.data.specialisms.length > 0 && (
-      <section aria-labelledby="specialisms-heading">
-        <h2 id="specialisms-heading">Specialisms</h2>
-        <ul>
-          {profile.data.specialisms.map((specialism) => (
-            <li>{specialism}</li>
-          ))}
-        </ul>
-      </section>
-    )
-  }
-
   <nav aria-label="Professional profiles">
     <ul>
-      <li><a href={profile.data.linkedin}>LinkedIn</a></li>
-      <li><a href={profile.data.github}>GitHub</a></li>
+      <li><a href={profile.data.linkedin} rel="me">LinkedIn</a></li>
+      <li><a href={profile.data.github} rel="me">GitHub</a></li>
     </ul>
   </nav>
 </header>
+
+<section aria-labelledby="professional-profile-heading">
+  <h2 id="professional-profile-heading">Professional profile</h2>
+  <Content />
+</section>
+
+{
+  profile.data.specialisms.length > 0 && (
+    <section aria-labelledby="specialisms-heading">
+      <h2 id="specialisms-heading">Specialisms</h2>
+      <ul>
+        {profile.data.specialisms.map((specialism) => (
+          <li>{specialism}</li>
+        ))}
+      </ul>
+    </section>
+  )
+}

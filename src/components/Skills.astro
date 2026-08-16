@@ -1,0 +1,41 @@
+---
+const { skills } = Astro.props;
+
+const categories = [
+  {
+    heading: 'Software development',
+    skills: skills.softwareDevelopment,
+  },
+  {
+    heading: 'Cloud and DevOps',
+    skills: skills.cloudDevOps,
+  },
+  {
+    heading: 'Identity and security',
+    skills: skills.identitySecurity,
+  },
+  {
+    heading: 'Front end',
+    skills: skills.frontEnd,
+  },
+  {
+    heading: 'Engineering practices',
+    skills: skills.engineering,
+  },
+];
+---
+
+<section aria-labelledby="technical-expertise-heading">
+  <h2 id="technical-expertise-heading">Technical expertise</h2>
+
+  {
+    categories.map((category) => (
+      <section>
+        <h3>{category.heading}</h3>
+        <ul>
+          {category.skills.map((skill) => <li>{skill}</li>)}
+        </ul>
+      </section>
+    ))
+  }
+</section>

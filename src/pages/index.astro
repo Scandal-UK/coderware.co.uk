@@ -1,10 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
+import Experience from '../components/Experience.astro';
 
 const title = 'Dan Ware | Senior Software Engineer';
 
 const experience = (await getCollection('experience'))
-  .sort((left, right) => right.data.start.localeCompare(left.data.start));
+  .sort((left, right) =>
+    right.data.start.localeCompare(left.data.start)
+  );
 ---
 
 <!doctype html>
@@ -27,11 +30,7 @@ const experience = (await getCollection('experience'))
 
         {
           experience.map((job) => (
-            <article>
-              <h3>{job.data.role}</h3>
-              <p>{job.data.company}</p>
-              <p>{job.data.start} – {job.data.end}</p>
-            </article>
+            <Experience job={job} />
           ))
         }
       </section>

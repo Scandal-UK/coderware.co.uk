@@ -1,0 +1,26 @@
+---
+import { render } from 'astro:content';
+
+const { job } = Astro.props;
+const { Content } = await render(job);
+---
+
+<article>
+  <header>
+    <h3>{job.data.role}</h3>
+    <p>{job.data.company}</p>
+    <p>{job.data.start} – {job.data.end}</p>
+  </header>
+
+  <Content />
+
+  {
+    job.data.technologies.length > 0 && (
+      <p>
+        <strong>Technologies:</strong>
+        {' '}
+        {job.data.technologies.join(', ')}
+      </p>
+    )
+  }
+</article>

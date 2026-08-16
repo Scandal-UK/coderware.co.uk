@@ -3,7 +3,6 @@ company: Novia Financial (aka Wealthtime)
 role: Software Developer
 start: 2021-03
 end: 2022-09
-order: 1
 
 technologies:
   - C#

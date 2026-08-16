@@ -3,7 +3,6 @@ company: Berkshire Cloud
 role: Software Engineer
 start: 2020-10
 end: 2021-03
-order: 1
 
 technologies:
   - C#

@@ -3,7 +3,6 @@ company: CFH Docmail
 role: Software Engineer
 start: 2004-11
 end: 2018-11
-order: 1
 
 technologies:
   - C#

@@ -3,7 +3,6 @@ company: Citizens Advice Bureau (Midsomer Norton/Keynasham)
 role: Internet Specialist
 start: 2002
 end: 2003
-order: 1
 
 technologies:
   - Windows Server 2000

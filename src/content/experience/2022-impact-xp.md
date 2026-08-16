@@ -3,7 +3,6 @@ company: Impact-XP
 role: Senior Software Engineer
 start: 2022-09
 end: 2026-08
-order: 1
 
 technologies:
   - C#

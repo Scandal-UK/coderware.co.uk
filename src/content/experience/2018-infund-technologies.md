@@ -3,7 +3,6 @@ company: InFund Technologies (aka Ignite Funding)
 role: Senior Software Developer
 start: 2018-11
 end: 2020-10
-order: 1
 
 technologies:
   - C#

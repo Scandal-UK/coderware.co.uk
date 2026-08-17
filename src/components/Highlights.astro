@@ -1,0 +1,18 @@
+---
+const { highlights } = Astro.props;
+---
+
+<section class="career-highlights" aria-labelledby="career-highlights-heading">
+  <h2 id="career-highlights-heading">Career highlights</h2>
+
+  <dl>
+    {
+      highlights.map((highlight) => (
+        <div>
+          <dt>{highlight.category}</dt>
+          <dd>{highlight.text}</dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>

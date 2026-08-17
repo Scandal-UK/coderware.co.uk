@@ -1,0 +1,97 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Experience from '../components/Experience.astro';
+import Highlights from '../components/Highlights.astro';
+import Profile from '../components/Profile.astro';
+import Skills from '../components/Skills.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { contactEmail } from '../site.config';
+
+const title = 'Dan Ware | Senior Software Engineer | .NET & Azure';
+const description = 'Senior Software Engineer with 25+ years of experience in .NET, Azure, platform modernisation, identity, security and multi-tenant SaaS systems.';
+
+const profile = await getEntry('profile', 'profile');
+
+if (!profile) {
+  throw new Error('Profile content is missing');
+}
+
+const highlights = await getEntry('highlights', 'highlights');
+
+if (!highlights) {
+  throw new Error('Career highlights content is missing');
+}
+
+const skills = await getEntry('skills', 'skills');
+
+if (!skills) {
+  throw new Error('Technical expertise content is missing');
+}
+
+const experience = (await getCollection('experience'))
+  .sort((left, right) =>
+    right.data.start.localeCompare(left.data.start)
+  );
+
+const canonicalUrl = new URL('/', Astro.site).toString();
+const personId = `${canonicalUrl}#person`;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ProfilePage',
+      '@id': canonicalUrl,
+      url: canonicalUrl,
+      name: title,
+      description,
+      mainEntity: {
+        '@id': personId,
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': personId,
+      name: profile.data.name,
+      url: canonicalUrl,
+      jobTitle: profile.data.role,
+      email: contactEmail,
+      sameAs: [
+        profile.data.linkedin,
+        profile.data.github,
+      ],
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Bath',
+        addressCountry: 'GB',
+      },
+      knowsAbout: [
+        ...profile.data.specialisms,
+        ...skills.data.softwareDevelopment,
+        ...skills.data.cloudDevOps,
+        ...skills.data.identitySecurity,
+        ...skills.data.frontEnd,
+        ...skills.data.engineering,
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout title={title} description={description} structuredData={structuredData}>
+  <main class="cv" id="main-content">
+    <Profile profile={profile} email={contactEmail} />
+    <Highlights highlights={highlights.data.highlights} />
+    <Skills skills={skills.data} />
+
+    <section class="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+
+      {
+        experience.map((job) => (
+          <Experience job={job} />
+        ))
+      }
+    </section>
+  </main>
+</BaseLayout>

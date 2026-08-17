@@ -1,0 +1,40 @@
+---
+import { render } from 'astro:content';
+
+const { job } = Astro.props;
+const { Content } = await render(job);
+
+const headingId = `experience-${job.id}`;
+
+const formatDate = (value) => new Intl.DateTimeFormat('en-GB', {
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+}).format(new Date(`${value}-01T00:00:00Z`));
+---
+
+<article class="experience-entry" aria-labelledby={headingId}>
+  <header>
+    <div>
+      <h3 id={headingId}>{job.data.role}</h3>
+      <p class="experience-company">{job.data.company}</p>
+    </div>
+    <p class="experience-dates">
+      <time datetime={job.data.start}>{formatDate(job.data.start)}</time>
+      {' – '}
+      <time datetime={job.data.end}>{formatDate(job.data.end)}</time>
+    </p>
+  </header>
+
+  <Content />
+
+  {
+    job.data.technologies.length > 0 && (
+      <p class="technologies">
+        <strong>Technologies:</strong>
+        {' '}
+        {job.data.technologies.join(', ')}
+      </p>
+    )
+  }
+</article>

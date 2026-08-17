@@ -19,12 +19,6 @@ const logoUrl = new URL('/favicon.ico', Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    <meta property="og:type" content="profile" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:image" content={socialImageUrl} />
-    <meta property="og:logo" content={logoUrl} />
 
     <meta name="description" content={description} />
     <meta name="author" content="Dan Ware" />
@@ -32,13 +26,18 @@ const logoUrl = new URL('/favicon.ico', Astro.site);
 
     <link rel="canonical" href={canonicalUrl} />
 
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:logo" content={logoUrl} />
+    <meta property="og:image" content={socialImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
     <meta
       property="og:image:alt"
       content="Dan Ware — Senior Software Engineer"
     />
-
 
     <meta name="site_name" property="og:site_name" content="Dan Ware" />
     <meta name="locale" property="og:locale" content="en_GB" />

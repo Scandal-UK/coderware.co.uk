@@ -1,7 +1,7 @@
 ---
 import { render } from 'astro:content';
 
-const { profile } = Astro.props;
+const { profile, email } = Astro.props;
 const { Content } = await render(profile);
 ---
 
@@ -21,7 +21,7 @@ const { Content } = await render(profile);
 
   <nav aria-label="Professional profiles">
     <ul>
-      <li><a href={`mailto:${profile.data.email}`}>Email</a></li>
+      <li><a href={`mailto:${email}`}>Email</a></li>
       <li><a href={profile.data.linkedin} rel="me">LinkedIn</a></li>
       <li><a href={profile.data.github} rel="me">GitHub</a></li>
     </ul>

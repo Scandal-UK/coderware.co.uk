@@ -5,6 +5,7 @@ import Highlights from '../components/Highlights.astro';
 import Profile from '../components/Profile.astro';
 import Skills from '../components/Skills.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { contactEmail } from '../site.config';
 
 const title = 'Dan Ware | Senior Software Engineer | .NET & Azure';
 const description = 'Senior Software Engineer with 25+ years of experience in .NET, Azure, platform modernisation, identity, security and multi-tenant SaaS systems.';
@@ -54,7 +55,7 @@ const structuredData = {
       name: profile.data.name,
       url: canonicalUrl,
       jobTitle: profile.data.role,
-      email: profile.data.email,
+      email: contactEmail,
       sameAs: [
         profile.data.linkedin,
         profile.data.github,
@@ -79,7 +80,7 @@ const structuredData = {
 
 <BaseLayout title={title} description={description} structuredData={structuredData}>
   <main class="cv" id="main-content">
-    <Profile profile={profile} />
+    <Profile profile={profile} email={contactEmail} />
     <Highlights highlights={highlights.data.highlights} />
     <Skills skills={skills.data} />
 

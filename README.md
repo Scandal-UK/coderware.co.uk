@@ -6,7 +6,7 @@ Previously it was a Bootstrap template but now it uses [Astro](https://astro.bui
 
 ## Project structure
 
-Career information is kept separately from its presentation:
+Content is kept in its own directory, separately from its presentation:
 
 ```text
 src/
@@ -19,8 +19,6 @@ src/
 ├── content.config.ts    Content collection schemas
 └── site.config.ts       Site-wide configuration
 ```
-
-Experience entries use structured front matter for employers, roles, dates and technologies. Their Markdown bodies contain the role summaries and achievements. Entries are ordered from their dates rather than by a manually maintained display order.
 
 ## Running locally
 
@@ -61,16 +59,3 @@ npm run build
 ```
 
 This validates the content collections as well as producing the deployable static files.
-
-## Design principles
-
-The site deliberately favours:
-
-- semantic HTML and accessible navigation;
-- static output with minimal dependencies;
-- responsive and print-friendly presentation;
-- structured, reusable career content;
-- useful search metadata without keyword stuffing; and
-- simple code over speculative abstractions.
-
-The aim is not to be a demonstration of every tool I know. It is to present my work clearly and let the content do most of the talking.

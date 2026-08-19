@@ -44,6 +44,7 @@ const skills = defineCollection({
     identitySecurity: z.array(z.string()),
     frontEnd: z.array(z.string()),
     engineering: z.array(z.string()),
+    aiAssisted: z.array(z.string()),
   }),
 });
 

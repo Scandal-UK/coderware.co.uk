@@ -1,5 +1,5 @@
 ---
-company: Citizens Advice Bureau (Midsomer Norton/Keynasham)
+company: Citizens Advice Bureau (Midsomer Norton/Keynsham)
 role: Internet Specialist
 start: 2002-03
 end: 2003-10

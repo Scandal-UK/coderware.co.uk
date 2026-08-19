@@ -8,7 +8,7 @@ technologies:
   - Microsoft Azure
   - AngularJS
   - Java (Spring)
-  - PHP (Zend, Symfony, Silex and Magenta ecommerce)
+  - PHP (Zend, Symfony, Silex and Magento ecommerce)
   - jQuery UI/Mobile
 ---
 

@@ -19,4 +19,4 @@ Worked with clients and distributed development teams delivering Azure-based sol
  - Delivered cloud-native solutions using Azure and ASP.NET Core.
  - Consulted with software organisations on architecture and cloud adoption.
  - Worked with emerging technologies including blockchain and distributed systems.
- - Contributed to the Microsoft eco-system.
+ - Contributed to the Microsoft ecosystem.

@@ -21,3 +21,5 @@ I specialise in designing, modernising and maintaining business-critical softwar
 Throughout my career I have worked on projects ranging from early e-commerce platforms through to modern cloud-native solutions hosted in Azure. I have led the development of customer-facing platforms, implemented secure authentication systems, migrated organisations from legacy technologies and helped businesses simplify complex technical estates through platform consolidation.
 
 I am a strong advocate of Test-Driven Development, SOLID design principles and clean, maintainable code. I enjoy mentoring developers, sharing knowledge and helping teams deliver software that remains easy to understand and evolve long after the initial release.
+
+I use AI-assisted development where it adds value, combining tools such as GitHub Copilot with established engineering practices including TDD, SOLID principles and developer review.

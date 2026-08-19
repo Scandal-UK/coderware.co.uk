@@ -28,3 +28,4 @@ Played a key role in the consolidation of multiple SaaS platforms into a unified
  - Worked across front-end and back-end systems using C#, ASP.NET Core, TypeScript and Vue.
  - Collaborated directly with stakeholders to deliver business-critical features and technical improvements.
  - Introduced and maintained automated testing and quality-focused development practices.
+ - Used GitHub Copilot within Visual Studio for .NET development, with repository-level instructions to ensure generated code followed established coding conventions, SOLID principles and unit-testing practices.

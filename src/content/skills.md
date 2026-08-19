@@ -40,4 +40,11 @@ engineering:
   - Agile Delivery
   - Scrum
   - Technical Mentoring
+
+aiAssisted:
+  - GitHub Copilot
+  - AI-assisted .NET development
+  - Repository-level Copilot instructions
+  - AI-assisted unit test generation
+  - Code generation aligned with SOLID and established coding standards
 ---

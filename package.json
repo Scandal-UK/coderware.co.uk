@@ -1,7 +1,7 @@
 {
   "name": "coderware.co.uk",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal CV website",
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",

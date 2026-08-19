@@ -7,7 +7,7 @@ highlights:
     text: Led the consolidation of multiple SaaS platforms into a unified multi-tenant architecture.
 
   - category: Identity
-    text: Designed and implemented identity and authentication solutions using IdentityServer4, OpenID Connect and Microsoft Entra ID.
+    text: Designed and implemented identity and authentication solutions using OAuth 2.0, OpenID Connect, Microsoft Entra ID and various SSO providers.
 
   - category: Product
     text: Designed and developed the Docmail platform and contributed to the wider Hybrid Mail processing infrastructure.

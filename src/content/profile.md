@@ -14,12 +14,8 @@ linkedin: https://www.linkedin.com/in/dan-ware-uk/
 github: https://github.com/scandal-uk
 ---
 
-Senior Software Engineer with over 25 years of commercial software development experience across financial services, healthcare, SaaS and high-volume transactional systems.
+Senior Software Engineer with over 25 years of commercial experience, specialising in C#/.NET, Microsoft Azure, identity and application security, multi-tenant SaaS platforms and distributed systems. Experienced in software architecture, platform modernisation and the migration of business-critical legacy systems to modern cloud-hosted solutions.
 
-I specialise in designing, modernising and maintaining business-critical software platforms using the Microsoft technology stack, with extensive experience in cloud-hosted applications, identity management, application security and large-scale system migrations.
+I have led the development and consolidation of customer-facing platforms, designed secure authentication and identity solutions, and worked with sensitive financial, healthcare and payroll systems. I am a strong advocate of Test-Driven Development, SOLID design principles and clean, maintainable code, and enjoy mentoring developers and sharing knowledge within engineering teams.
 
-Throughout my career I have worked on projects ranging from early e-commerce platforms through to modern cloud-native solutions hosted in Azure. I have led the development of customer-facing platforms, implemented secure authentication systems, migrated organisations from legacy technologies and helped businesses simplify complex technical estates through platform consolidation.
-
-I am a strong advocate of Test-Driven Development, SOLID design principles and clean, maintainable code. I enjoy mentoring developers, sharing knowledge and helping teams deliver software that remains easy to understand and evolve long after the initial release.
-
-I use AI-assisted development where it adds value, combining tools such as GitHub Copilot with established engineering practices including TDD, SOLID principles and developer review.
+I use AI-assisted development where it adds value, including GitHub Copilot within Visual Studio and .NET development workflows. I have used repository-level instructions to align generated code with established coding standards, SOLID principles and unit-testing practices, while retaining developer review of generated changes.

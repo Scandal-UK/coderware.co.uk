@@ -11,7 +11,7 @@ specialisms:
   - Identity Systems
 
 linkedin: https://www.linkedin.com/in/dan-ware-uk/
-github: https://github.com/scandal-uk
+github: https://github.com/Scandal-UK/coderware.co.uk
 ---
 
 Senior Software Engineer with over 25 years of commercial experience, specialising in C#/.NET, Microsoft Azure, identity and application security, multi-tenant SaaS platforms and distributed systems. Experienced in software architecture, platform modernisation and the migration of business-critical legacy systems to modern cloud-hosted solutions.

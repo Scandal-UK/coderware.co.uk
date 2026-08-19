@@ -18,16 +18,18 @@ cloudDevOps:
   - Infrastructure as Code
 
 identitySecurity:
-  - IdentityServer4
-  - OpenID Connect
-  - OAuth2
+  - OpenID Connect (OIDC)
+  - OAuth 2.0
   - Microsoft Entra ID
+  - Federated Authentication
+  - Multi-Factor Authentication (MFA)
   - Application Security
   - Secure Software Design
 
 frontEnd:
   - TypeScript
   - Node.js
+  - Angular
   - Vue.js
   - React
   - JavaScript

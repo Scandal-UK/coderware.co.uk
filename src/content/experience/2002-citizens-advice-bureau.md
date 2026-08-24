@@ -11,6 +11,7 @@ technologies:
   - HTML/JavaScript
   - PHP
   - Perl
+  - MySQL
 ---
 
-Worked on transferring paper records to an online database that I had created and migrated the network from Windows NT to Windows Server 2000.
+Worked on a voluntary basis, transferring paper records to an online database which I designed to be shared between branches. I also migrated the network from Windows NT to Windows Server 2000.

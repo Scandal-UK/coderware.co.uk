@@ -13,6 +13,7 @@ technologies:
   - Snowflake
   - Terraform
   - NServiceBus
+  - CQRS architecture
   - SignalR
   - Datadog
 ---

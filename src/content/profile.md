@@ -10,6 +10,9 @@ specialisms:
   - Platform Modernisation
   - Test-Driven Development
   - SaaS Architecture
+  - SQL Server
+  - Microsoft Azure
+  - Application Security
 
 linkedin: https://www.linkedin.com/in/dan-ware-uk/
 github: https://github.com/Scandal-UK/coderware.co.uk

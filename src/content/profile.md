@@ -5,10 +5,11 @@ secondaryRole: Software Architect
 location: Bath, UK
 
 specialisms:
+  - Software Architecture
+  - C# / .NET
   - Platform Modernisation
-  - TDD Practices
-  - Azure Architecture
-  - Identity Systems
+  - Test-Driven Development
+  - SaaS Architecture
 
 linkedin: https://www.linkedin.com/in/dan-ware-uk/
 github: https://github.com/Scandal-UK/coderware.co.uk

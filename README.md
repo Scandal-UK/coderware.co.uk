@@ -9,6 +9,7 @@ Previously it was a Bootstrap template but now it uses [Astro](https://astro.bui
 Content is kept in its own directory, separately from its presentation:
 
 ```text
+.github/workflows/       Deployment file
 src/
 ├── components/          Astro components for individual CV sections
 ├── content/             Profile, highlights, skills and experience content
@@ -37,6 +38,10 @@ npm run dev
 ```
 
 Astro will print the local address when the server starts. Changes to components, content and styles are reflected while it is running.
+
+## Deployment
+
+Changes to the `main` branch will trigger the deployment to GitHub Pages. This action is defined in `deploy.yml`, found in the `.github/workflows` path.
 
 ## Production build
 

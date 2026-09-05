@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "cv:pdf:generate": "node scripts/generate-pdf.mjs",
+    "cv:pdf": "npm run build && start-server-and-test preview http://127.0.0.1:4321 cv:pdf:generate"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,9 @@
   },
   "allowScripts": {
     "esbuild@0.28.2": true
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "start-server-and-test": "^3.0.12"
   }
 }

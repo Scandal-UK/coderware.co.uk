@@ -51,6 +51,12 @@ Generate the static production site:
 npm run build
 ```
 
+Or, to also include a generated PDF of the static site saved as `dan-ware-cv.pdf`:
+
+```sh
+npm run cv:pdf
+```
+
 The generated files are written to `dist/`.
 
 ## Content changes

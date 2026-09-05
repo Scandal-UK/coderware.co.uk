@@ -9,7 +9,6 @@ Previously it was a Bootstrap template but now it uses [Astro](https://astro.bui
 Content is kept in its own directory, separately from its presentation:
 
 ```text
-.github/workflows/       Deployment file
 src/
 ├── components/          Astro components for individual CV sections
 ├── content/             Profile, highlights, skills and experience content
@@ -56,6 +55,8 @@ Or, to also include a generated PDF of the static site saved as `dan-ware-cv.pdf
 ```sh
 npm run cv:pdf
 ```
+
+> Note that you may need to install extra dependencies for the PDF generation using `npx playwright install-deps`
 
 The generated files are written to `dist/`.
 

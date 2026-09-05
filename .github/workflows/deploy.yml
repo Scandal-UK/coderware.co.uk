@@ -30,11 +30,8 @@ jobs:
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Build site
-        run: npm run build
-
-      - name: Generate CV PDF
-        run: npx start-server-and-test preview http://127.0.0.1:4321 cv:pdf:generate
+      - name: Build site & generate PDF
+        run: npm run cv:pdf
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4

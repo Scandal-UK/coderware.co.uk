@@ -5,7 +5,7 @@ const browser = await chromium.launch();
 try {
     const page = await browser.newPage();
 
-    await page.goto('http://127.0.0.1:4321/', {
+    await page.goto('http://localhost:4321/', {
         waitUntil: 'networkidle',
     });
 

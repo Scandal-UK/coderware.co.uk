@@ -43,10 +43,11 @@ engineering:
   - Scrum
   - Technical Mentoring
 
-aiAssisted:
-  - GitHub Copilot
-  - AI-assisted .NET development
-  - Repository-level Copilot instructions
-  - AI-assisted unit test generation
-  - Code generation aligned with SOLID and established coding standards
+messaging:
+  - NServiceBus
+  - RabbitMQ/MassTransit
+  - Azure Service Bus
+  - CQRS
+  - Event-driven systems
+  - SignalR
 ---

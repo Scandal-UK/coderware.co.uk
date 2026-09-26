@@ -7,15 +7,11 @@ end: 2026-08
 technologies:
   - C#
   - ASP.NET Core
-  - IdentityServer4
-  - Azure
-  - Azure SQL
-  - TypeScript
-  - Vue.js
-  - OpenID Connect
-  - OAuth2
-  - Microsoft Entra ID
-  - Azure DevOps
+  - Azure DevOps, Azure & Azure SQL
+  - TypeScript & Vue.js
+  - IdentityServer4, IAM & JWT
+  - OpenID Connect/OAuth2/Entra ID
+  - RabbitMQ & MassTransit
 ---
 
 Played a key role in the consolidation of multiple SaaS platforms into a unified multi-tenant architecture hosted in Azure.
@@ -28,4 +24,3 @@ Played a key role in the consolidation of multiple SaaS platforms into a unified
  - Worked across front-end and back-end systems using C#, ASP.NET Core, TypeScript and Vue.
  - Collaborated directly with stakeholders to deliver business-critical features and technical improvements.
  - Introduced and maintained automated testing and quality-focused development practices.
- - Used GitHub Copilot within Visual Studio for .NET development, with repository-level instructions to ensure generated code followed established coding conventions, SOLID principles and unit-testing practices.

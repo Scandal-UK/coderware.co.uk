@@ -1,15 +1,16 @@
 ---
 company: Self Employment
-role: Freelance Developer
+role: Early career & freelance
 start: 1999-11
 end: 2018-08
 
 technologies:
-  - Microsoft Azure
+  - Early Microsoft/web platforms
+  - ColdFusion
   - AngularJS
-  - Java (Spring)
+  - Java/Spring
   - PHP (Zend, Symfony, Silex and Magento ecommerce)
   - jQuery UI/Mobile
 ---
 
-I have worked on various freelance applications alone, using many different frameworks and ecommerce platforms.
+Early commercial web/software development companies (pre 2004), consultancy and freelance work spanning ecommerce, databases and business applications. Technologies included Java/Spring, PHP, JavaScript, AngularJS, jQuery and early Microsoft/web platforms.

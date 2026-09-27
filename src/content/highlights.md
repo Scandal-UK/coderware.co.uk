@@ -1,10 +1,10 @@
 ---
 highlights:
   - category: Experience
-    text: Over 25 years of commercial software development experience.
+    text: Full-stack development, OWASP security practices, platform scalability, server infrastructure and technical leadership.
 
   - category: Platform
-    text: Led the consolidation of multiple SaaS platforms into a unified multi-tenant architecture.
+    text: Led the consolidation of multiple SaaS platforms into a unified multi-tenant architecture. Designed and scaled high-volume platforms for major UK organisations, supporting hundreds of thousands of users and business-critical workloads.
 
   - category: Identity
     text: Designed and implemented identity and authentication solutions using OAuth 2.0, OpenID Connect, Microsoft Entra ID and various SSO providers.

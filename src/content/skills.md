@@ -44,10 +44,10 @@ engineering:
   - Technical Mentoring
 
 messaging:
-  - NServiceBus
+  - NServiceBus/Azure Service Bus
   - RabbitMQ/MassTransit
-  - Azure Service Bus
   - CQRS
   - Event-driven systems
   - SignalR
+  - ETL
 ---

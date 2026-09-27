@@ -5,7 +5,7 @@ start: 2004-11
 end: 2018-11
 
 technologies:
-  - C#/ASP.NET/VB.NET & ADO.NET,
+  - C#/ASP.NET/VB.NET & ADO.NET
   - .NET Core & EF Core
   - SQL Server
   - Banking/NHS Data Processor

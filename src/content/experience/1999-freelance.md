@@ -1,5 +1,5 @@
 ---
-company: Various roles & self employment
+company: Various roles & self-employment
 role: Early career & freelance
 start: 1999-11
 end: 2018-08

@@ -8,7 +8,6 @@ technologies:
   - C#/ASP.NET/VB.NET & ADO.NET
   - .NET Core & EF Core
   - SQL Server
-  - Banking/NHS Data Processor
   - VMWare Virtualisation
 ---
 

@@ -5,7 +5,8 @@ start: 2004-11
 end: 2018-11
 
 technologies:
-  - C#, ASP.NET, ADO.NET, .NET Core
+  - C#/ASP.NET/VB.NET & ADO.NET,
+  - .NET Core & EF Core
   - SQL Server
   - Banking/NHS Data Processor
   - VMWare Virtualisation
@@ -15,7 +16,7 @@ Originally hired to bring various Continuforms business services online, I spent
 
  - Designed and developed the Docmail platform.
  - Developed systems supporting Hybrid Mail processing and large-scale document delivery.
- - Reverse-engineered proprietary document formats including AFP and DOC.
+ - Reverse-engineered proprietary document formats including PDF, AFP and DOC.
  - Optimised SQL Server workloads for higher throughput.
  - Supported all file types for processing and printing on industrial Xerox machines.
  - Built logistics, workflow, sorting and tracking systems integrated with specialist hardware.
